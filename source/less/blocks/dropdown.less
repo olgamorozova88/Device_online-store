@@ -1,0 +1,35 @@
+.dropdown__list {
+  position: absolute;
+  z-index: 1;
+  width: 1040px;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
+  list-style: none;
+  background-color: @basic-yellow;
+}
+
+.dropdown__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  padding: 12px 0;
+}
+
+.dropdown__link {
+  margin-bottom: 16px;
+  color: @basic-black;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

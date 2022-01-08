@@ -1,0 +1,41 @@
+.slide__image {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 98px;
+}
+
+.slide__info {
+  width: 500px;
+}
+
+.slide__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+
+  &::before {
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 52px;
+    content: "";
+    width: 100px;
+    height: 7px;
+    background-color: @basic-white;
+  }
+}
+
+.slide__description {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.slide__button {
+  padding: 7px 44px;
+  background-color: transparent;
+}
