@@ -1,13 +1,12 @@
 .dropdown__list {
   position: absolute;
-  z-index: 1;
-  width: 1040px;
-  height: 0;
+  z-index: 2;
+  width: 1160px;
+  min-height: 146px;
   overflow: hidden;
-  display: flex;
-  margin: 0;
-  margin-top: 18px;
-  padding: 0;
+  display: none;
+  margin: 0 -60px;
+  padding: 18px 60px 30px;
   list-style: none;
   background-color: @basic-yellow;
 }
@@ -23,6 +22,10 @@
   margin-bottom: 16px;
   color: @basic-black;
   cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover,
   &:focus {

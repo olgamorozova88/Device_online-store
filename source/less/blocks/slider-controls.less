@@ -1,0 +1,31 @@
+.slider-controls__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-controls__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  border: 1px solid @basic-black;
+  cursor: pointer;
+}
+
+.slider-controls__item--checked::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  border: 1px solid @basic-black;
+}
