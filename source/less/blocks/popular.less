@@ -1,0 +1,72 @@
+.popular__list {
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.popular__item {
+  width: 160px;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.popular__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 39px;
+  width: 160px;
+  height: 160px;
+  background-color: @basic-yellow;
+}
+
+.popular__icon {
+  object-fit: cover;
+
+  &--vr {
+    width: 97px;
+    height: 55px;
+  }
+
+  &--selfie {
+    width: 86px;
+    height: 117px;
+  }
+
+  &--camera {
+    width: 71px;
+    height: 87px;
+  }
+
+  &--fitnes {
+    width: 107px;
+    height: 65px;
+  }
+
+  &--watches {
+    width: 56px;
+    height: 98px;
+  }
+
+  &--quadro {
+    width: 132px;
+    height: 69px;
+  }
+}
+
+.popular__title {
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  &--fitnes {
+    letter-spacing: 0;
+  }
+}

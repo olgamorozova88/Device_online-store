@@ -14,7 +14,18 @@
     <header class="page__header header">
       <div class="header__logo logo">
         <a class="logo__link">
-          <img class="logo__image" src="img/logo-black.svg" alt="Логотип Device" width="163" height="35">
+          <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M-.2.7v33.6h13.6A15.7 15.7 0 0 0 25 29.5a16.5 16.5 0 0 0 4.7-12 16.5 16.5 0 0 0-10-15.6C17.7 1 15.5.6 13.3.7H-.2Zm7.8 26.2V8.1h5.8a8.6 8.6 0 0 1 6.5 2.6 9.4 9.4 0 0 1 2.5 6.8 9.4 9.4 0 0 1-2.5 6.8 8.6 8.6 0 0 1-6.5 2.6H7.6Zm34.8-6h12v-7.2h-12V8h13.3V.7h-21v33.6h21.2v-7.4H42.4v-6Zm36.3 13.4L89.7.7h-8.4l-7.5 24.7L66.3.7h-8.5l11 33.6h10Zm14.4 0h7.8V.7H93v33.6Zm38.6-1.4c2.5-1.3 4.6-3.3 6-5.7l-6.6-3.8a7.5 7.5 0 0 1-3.2 3c-1.4.7-3 1.1-4.6 1a9.6 9.6 0 0 1-7.2-2.7 10 10 0 0 1-2.7-7.2 10 10 0 0 1 2.7-7.3 9.6 9.6 0 0 1 7.2-2.7c1.6 0 3.2.4 4.6 1 1.4.8 2.5 1.8 3.2 3.1l6.7-3.8a15.9 15.9 0 0 0-6.1-5.7 17.4 17.4 0 0 0-8.4-2 17.1 17.1 0 0 0-17.6 17.4A17.1 17.1 0 0 0 123.3 35c3 0 5.8-.7 8.4-2.1Zm18-12h12v-7.2h-12V8h13.2V.7h-21v33.6h21.3v-7.4h-13.6v-6Z"
+                fill="#000" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h163v35H0z" />
+              </clipPath>
+            </defs>
+          </svg>
         </a>
       </div>
       <div class="main-nav">
@@ -27,13 +38,28 @@
           </div>
           <ul class="user-nav user-nav__list">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--login" href="#">Войти</a>
+              <a class="user-nav__link user-nav__link--login" href="#">
+                <svg class="user-nav__icon" width="13" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 2.3c1.2 0 2.2 1 2.2 2.4C8.7 6 7.7 7 6.5 7 5.3 7 4.3 6 4.3 4.7c0-1.3 1-2.4 2.2-2.4Zm0 9.4s4.3 0 4.3-1.2c0-1.4-2-3-4.3-3-2.2 0-4.3 1.6-4.3 3 0 1.2 4.3 1.2 4.3 1.2Z" fill="#000"/>
+                </svg>
+                <span>Войти</span>
+              </a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--compare" href="#">Сравнить</a>
+              <a class="user-nav__link user-nav__link--compare" href="#">
+                <svg class="user-nav__icon" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 5.4h1.7V11H2.9V5.4Zm3.2-2.5h1.6v8.2H6.2V2.9Zm3.3 4.7H11V11H9.5V7.6Z" fill="#000"/>
+                </svg>
+                <span>Сравнить</span>
+              </a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--cart" href="#">Корзина</a>
+              <a class="user-nav__link user-nav__link--cart" href="#">
+                <svg class="user-nav__icon" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9.9 2.5-.3-.1h-2v1c0 .5-.3.9-.8.9a.9.9 0 0 1-1-.9v-1H4.2v1c0 .5-.5.9-1 .9a.9.9 0 0 1-.8-.9v-1h-2l-.3.1v.3l.6 6c0 .7.5 1.2 1.2 1.2H8c.7 0 1.2-.5 1.2-1.2l.7-6-.1-.3Z" fill="#231F20"/><path d="M3.2 3.8c.2 0 .3-.2.3-.4V1.5c0-.5.6-.8 1-.8h1c.5 0 .9.3.9.8v2c0 .1.2.3.4.3s.3-.2.3-.4V1.5C7.1.6 6.4 0 5.5 0h-1c-.9 0-1.7.7-1.7 1.5v2c0 .1.2.3.4.3Z" fill="#231F20"/>
+                </svg>
+                <span>Корзина</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -164,10 +190,49 @@
     </header>
   </div>
 
-
-
   <main class="page__main">
-
+    <div class="container">
+      <section class="popular">
+        <ul class="popular__list">
+          <li class="popular__item">
+            <div class="popular__image">
+              <img class="popular__icon popular__icon--vr" src="img/vr-icon.svg" alt="Пиктограмма VR-шлема" width="97" height="55">
+            </div>
+            <p class="popular__title">Виртуальная реальность</p>
+          </li>
+          <li class="popular__item">
+            <div class="popular__image">
+              <img class="popular__icon popular__icon--selfie" src="img/selfie-icon.svg" alt="Пиктограмма монопода для селфи" width="86" height="117">
+            </div>
+            <p class="popular__title">Моноподы для&nbsp;селфи</p>
+          </li>
+          <li class="popular__item">
+            <div class="popular__image">
+              <img class="popular__icon popular__icon--camera" src="img/camera-icon.svg" alt="Пиктограмма экшн-камеры" width="71" height="87">
+            </div>
+            <p class="popular__title">Экшн-камеры</p>
+          </li>
+          <li class="popular__item">
+            <div class="popular__image">
+              <img class="popular__icon popular__icon--fitnes" src="img/fitnes-icon.svg" alt="Пиктограмма фитнес-браслета" width="107" height="65">
+            </div>
+            <p class="popular__title popular__title--fitnes">Фитнес-браслеты</p>
+          </li>
+          <li class="popular__item">
+            <div class="popular__image">
+              <img class="popular__icon popular__icon--watches" src="img/watches-icon.svg" alt="Пиктограмма умных часов" width="56" height="98">
+            </div>
+            <p class="popular__title">Умные часы</p>
+          </li>
+          <li class="popular__item">
+            <div class="popular__image">
+              <img class="popular__icon popular__icon--quadro" src="img/quadro-icon.svg" alt="Пиктограмма квадрокоптера" width="132" height="69">
+            </div>
+            <p class="popular__title">Квадрокоптеры</p>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
 
 </body>

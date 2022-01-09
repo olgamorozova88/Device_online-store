@@ -9,7 +9,7 @@
 
 .user-nav__item {
   margin-right: 43px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   
   &:last-child {
     margin-right: 0;
@@ -21,27 +21,17 @@
 }
 
 .user-nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: @basic-black;
-  background-repeat: no-repeat;
-  background-position: left center;
 
-  &--login {
-    padding-left: 24px;
-    background-image: url("../img/user-icon.svg");
-    background-size: 13px 14px;
+  &--login .user-nav__icon {
+    margin-right: 11px;
   }
 
-  &--compare {
-    padding-left: 24px;
-    background-image: url("../img/compare-icon.svg");
-    background-size: 10px 10px;
-  }
-
-  &--cart {
-    padding-left: 23px;
-    background-image: url("../img/cart-icon.svg");
-    background-size: 10px 10px;
+  &--compare .user-nav__icon,
+  &--cart .user-nav__icon {
+    margin-right: 12px;
   }
 
   &:hover {

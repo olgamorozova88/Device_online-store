@@ -142,10 +142,72 @@ a {
 }
 .page__header {
   position: relative;
-  min-height: 506px;
+  min-height: 680px;
   margin-top: 40px;
-  padding: 44px 60px 0;
+  margin-bottom: 75px;
+  padding: 44px 60px 20px;
   background-image: linear-gradient(to bottom, #F7E296 0%, #F7E296 300px, #fff 300px, #fff 100%);
+}
+.popular__list {
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+}
+.popular__item {
+  width: 160px;
+  margin-right: 40px;
+}
+.popular__item:last-child {
+  margin-right: 0;
+}
+.popular__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 39px;
+  width: 160px;
+  height: 160px;
+  background-color: #F7E296;
+}
+.popular__icon {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular__icon--vr {
+  width: 97px;
+  height: 55px;
+}
+.popular__icon--selfie {
+  width: 86px;
+  height: 117px;
+}
+.popular__icon--camera {
+  width: 71px;
+  height: 87px;
+}
+.popular__icon--fitnes {
+  width: 107px;
+  height: 65px;
+}
+.popular__icon--watches {
+  width: 56px;
+  height: 98px;
+}
+.popular__icon--quadro {
+  width: 132px;
+  height: 69px;
+}
+.popular__title {
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+.popular__title--fitnes {
+  letter-spacing: 0;
 }
 .search {
   width: 540px;
@@ -424,7 +486,7 @@ a {
 }
 .user-nav__item {
   margin-right: 43px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 .user-nav__item:last-child {
   margin-right: 0;
@@ -433,25 +495,16 @@ a {
   margin-left: auto;
 }
 .user-nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #000;
-  background-repeat: no-repeat;
-  background-position: left center;
 }
-.user-nav__link--login {
-  padding-left: 24px;
-  background-image: url("../img/user-icon.svg");
-  background-size: 13px 14px;
+.user-nav__link--login .user-nav__icon {
+  margin-right: 11px;
 }
-.user-nav__link--compare {
-  padding-left: 24px;
-  background-image: url("../img/compare-icon.svg");
-  background-size: 10px 10px;
-}
-.user-nav__link--cart {
-  padding-left: 23px;
-  background-image: url("../img/cart-icon.svg");
-  background-size: 10px 10px;
+.user-nav__link--compare .user-nav__icon,
+.user-nav__link--cart .user-nav__icon {
+  margin-right: 12px;
 }
 .user-nav__link:hover {
   opacity: 0.6;
