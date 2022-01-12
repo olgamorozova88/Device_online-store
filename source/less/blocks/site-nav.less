@@ -1,3 +1,10 @@
+.site-nav--footer {
+
+  & .site-nav__link {
+    color: @basic-white;
+  }
+}
+
 .site-nav__list {
   display: flex;
   margin: 0;
@@ -7,7 +14,7 @@
 
 .site-nav__item {
   margin-right: 35px;
-  
+
   &--catalog {
     width: 540px;
     margin-right: 0;
@@ -50,13 +57,11 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
   }
-  
 }

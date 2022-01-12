@@ -1,31 +1,34 @@
 .slider-controls__list {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .slider-controls__item {
-  position: relative;
-  display: inline-block;
+  display: block;
   margin-right: 18px;
+}
+
+.slider-controls__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   width: 12px;
   height: 12px;
   border-radius: 50px;
   border: 1px solid @basic-black;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.slider-controls__item--checked::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+.slider-controls__button--active::before {
+  display: block;
   content: "";
   width: 6px;
   height: 6px;
-  border-radius: 50px;
+  border-radius: 50%;
   border: 1px solid @basic-black;
 }

@@ -1,3 +1,7 @@
+.popular__wrapper {
+  margin-bottom: 49px;
+}
+
 .popular__list {
   display: flex;
   margin: 0;
@@ -11,6 +15,19 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.popular__link {
+
+  &:hover .popular__image {
+    background-color: @dark-yellow;
+    transition: all 0.3s linear;
+  }
+
+  &:active .popular__icon,
+  &:active .popular__title {
+    opacity: 0.3;
   }
 }
 
@@ -65,6 +82,7 @@
   line-height: 22px;
   font-weight: 800;
   letter-spacing: 0.05em;
+  color: @basic-black;
 
   &--fitnes {
     letter-spacing: 0;

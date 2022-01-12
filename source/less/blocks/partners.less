@@ -1,0 +1,38 @@
+.partners__wrapper {
+  margin-bottom: 90px;
+}
+
+.partners__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners__item {
+  width: 260px;
+  height: 100px;
+  margin-right: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--DJI:hover .partners__logo {
+    background-image: url(../img/logo-DJI-color.png);
+  }
+
+  &--SP:hover .partners__logo {
+    background-image: url(../img/logo-SP-color.png);
+  }
+
+  &--GoPro:hover .partners__logo {
+    background-image: url(../img/logo-GoPro-color.png);
+  }
+
+  &--Vive:hover .partners__logo {
+    background-image: url(../img/logo-Vive-color.png);
+  }
+}

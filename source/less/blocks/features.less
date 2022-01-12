@@ -1,0 +1,136 @@
+.features {
+  min-height: 403px;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 115px, @basic-grey 115px, @basic-grey 115px);
+}
+
+.features__container {
+  display: flex;
+  padding-top: 15px;
+  margin-bottom: 90px;
+}
+
+.features__wrapper {
+  margin-bottom: 90px;
+}
+
+.features__controls {
+  min-width: 284px;
+  min-height: 320px;
+  padding-top: 80px;
+  border-right: 7px solid @basic-black;
+}
+
+.features__control {
+  display: block;
+  width: 160px;
+  padding: 9px 20px;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:active {
+    color: @basic-yellow;
+  }
+
+  &:active::before {
+    width: 277px;
+    height: 100%;
+    background-color: @basic-black;
+  }
+
+  &--active {
+    color: @basic-yellow;
+  }
+
+  &--active::before {
+    width: 277px;
+    height: 100%;
+    background-color: @basic-black;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 71px;
+  padding-left: 116px;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+  display: none;
+  width: 758px;
+  background-position: top right;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &--delivery {
+    padding-right: 258px;
+
+    &::after {
+      top: 0;
+      right: 0;
+      width: 136px;
+      height: 164px;
+      background-image: url(../img/delivery-icon.svg);
+      background-size: cover;
+    }
+  }
+
+  &--warranty {
+    position: relative;
+    padding-right: 188px;
+
+    &::after {
+      top: -18px;
+      right: -18px;
+      width: 171px;
+      height: 195px;
+      background-image: url(../img/warranty-icon.svg);
+      background-size: cover;
+    }
+  }
+
+  &--loan {
+    position: relative;
+    padding-right: 188px;
+
+    &::after {
+      top: -23px;
+      right: 6px;
+      width: 156px;
+      height: 188px;
+      background-image: url(../img/loan-icon.svg);
+      background-size: cover;
+    }
+  }
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.features__description {
+  margin: 0;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+
+}
