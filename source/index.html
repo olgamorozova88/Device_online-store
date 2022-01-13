@@ -108,21 +108,13 @@
         </div>
       </div>
       <article class="slider">
-        <div class="slider__controls slider-controls">
-          <ul class="slider-controls__list">
-            <li class="slider-controls__item">
-              <button class="slider-controls__button slider-controls__button--active" type="button"></button>
-            </li>
-            <li class="slider-controls__item">
-              <button class="slider-controls__button" type="button"></button>
-            </li>
-            <li class="slider-controls__item">
-              <button class="slider-controls__button" type="button"></button>
-            </li>
-          </ul>
+        <div class="slider-controls slider__controls">
+          <button class="slider-controls__button slider-controls__button--active" type="button" data-slide="1"></button>
+          <button class="slider-controls__button" type="button" data-slide="2"></button>
+          <button class="slider-controls__button" type="button" data-slide="3"></button>
         </div>
         <ul class="slider__list">
-          <li class="slider__item slider__item--show slide slide--01">
+          <li class="slider__item slider__item--show slide slide--01" data-id="1">
             <div class="slide__image">
               <img class="slide__picture slide__picture--01" src="img/slide-01.png" alt="Квадрокоптер" width="526"
                 height="334">
@@ -149,7 +141,7 @@
               </dl>
             </div>
           </li>
-          <li class="slider__item slide slide--02">
+          <li class="slider__item slide slide--02" data-id="2">
             <div class="slide__image">
               <img class="slide__picture slide__picture--02" src="img/slide-02.png" alt="Фитнес-браслет" width="345"
                 height="485">
@@ -172,7 +164,7 @@
               </dl>
             </div>
           </li>
-          <li class="slider__item slide slide--03">
+          <li class="slider__item slide slide--03" data-id="3">
             <div class="slide__image">
               <img class="slide__picture slide__picture--03" src="img/slide-03.png" alt="Селфи-палка" width="384"
                 height="486">
@@ -492,7 +484,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

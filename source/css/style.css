@@ -763,22 +763,16 @@ a {
 .slide__details-group:last-child {
   margin-right: 0;
 }
-.slider-controls__list {
+.slider-controls {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.slider-controls__item {
-  display: block;
-  margin-right: 18px;
 }
 .slider-controls__button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin-right: 18px;
   width: 12px;
   height: 12px;
   border-radius: 50px;
