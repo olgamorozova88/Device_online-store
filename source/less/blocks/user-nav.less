@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   width: 500px;
   margin: 0;
+  margin-right: -43px;
   padding: 0;
   list-style: none;
 }
@@ -11,16 +12,8 @@
   margin-right: 43px;
   padding-bottom: 12px;
 
-  &:last-child {
-    margin-right: 0;
-  }
-
   &:nth-child(2) {
     margin-left: auto;
-  }
-
-  &--footer:nth-child(2) {
-    margin-left: 0;
   }
 }
 
@@ -28,10 +21,6 @@
   display: flex;
   align-items: center;
   color: @basic-black;
-
-  &--footer {
-    color: rgba(@basic-white, 0.7);
-  }
 
   &--login .user-nav__icon {
     margin-right: 11px;
@@ -51,6 +40,3 @@
   }
 }
 
-.user-nav__icon--footer path {
-  fill: @dark-yellow;
-}
