@@ -5,13 +5,17 @@
   position: relative;
   width: 440px;
 
-  &:focus-within .search__button {
-    display: block;
-  }
-
   &:focus-within .search__input {
     outline: none;
     box-shadow: inset 0 -2px @basic-black;
+
+    &::placeholder {
+      visibility: hidden;
+    }
+  }
+
+  &:focus-within .search__input:not(:placeholder-shown) ~ .search__button {
+    display: block;
   }
 }
 
