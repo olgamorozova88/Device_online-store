@@ -1017,6 +1017,7 @@ a {
   border: 1px solid #000;
 }
 .slider {
+  min-height: 514px;
   position: relative;
 }
 .slider__list {
