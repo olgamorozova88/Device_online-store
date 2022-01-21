@@ -1,0 +1,39 @@
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-right: -17px;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  margin-right: 17px;
+
+  &:not(:last-child)::after {
+    content: "";
+    display: block;
+    margin-left: 20px;
+    width: 4px;
+    height: 7px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(@basic-black, 0.3);
+
+  &[href]:hover {
+    color: rgba(@basic-black, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(@basic-black, 0.1);
+  }
+}
+

@@ -13,12 +13,16 @@
 
 .footer-nav__item {
   margin-right: 38px;
+
+  &--logged-in {
+    display: flex;
+  }
 }
 
 .footer-nav__link {
   display: flex;
   align-items: center;
-  color: @basic-white;
+  color: rgba(@basic-white, 0.7);
 
   &:hover {
     opacity: 0.6;
@@ -26,6 +30,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--log-out {
+    margin-left: 20px;
+    color: rgba(@basic-white, 0.3);
   }
 }
 

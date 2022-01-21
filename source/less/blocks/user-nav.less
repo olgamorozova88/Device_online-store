@@ -1,7 +1,10 @@
+.user-nav {
+  width: 500px;
+}
+
 .user-nav__list {
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
   margin: 0;
   margin-right: -43px;
   padding: 0;
@@ -12,8 +15,12 @@
   margin-right: 43px;
   padding-bottom: 12px;
 
-  &:nth-child(2) {
-    margin-left: auto;
+  &:first-child {
+    margin-right: auto;
+  }
+
+  &--logged-in {
+    display: flex;
   }
 }
 
@@ -24,6 +31,11 @@
 
   &--login .user-nav__icon {
     margin-right: 11px;
+  }
+
+  &--log-out {
+    margin-left: 22px;
+    color: rgba(@basic-black, 0.3);
   }
 
   &--compare .user-nav__icon,
