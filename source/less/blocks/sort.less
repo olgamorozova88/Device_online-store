@@ -32,16 +32,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -33px;
   padding: 0;
   list-style: none;
 
   &--direction {
     flex-shrink: 0;
     margin-left: auto;
-    margin-right: -16px;
 
-    & .sort__item {
+    & .sort__item:not(:last-child) {
       margin-right: 16px;
     }
   }
@@ -50,6 +48,10 @@
 .sort__item {
   margin-right: 33px;
   padding: 5px 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .sort__link {
   &--direction-up {

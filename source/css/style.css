@@ -184,12 +184,14 @@ a {
   padding: 0;
   list-style: none;
   display: flex;
-  margin-right: -17px;
 }
 .breadcrumbs__item {
   display: flex;
   align-items: center;
   margin-right: 17px;
+}
+.breadcrumbs__item:last-child {
+  margin-right: 0;
 }
 .breadcrumbs__item:not(:last-child)::after {
   content: "";
@@ -254,7 +256,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -40px;
   padding: 0;
   list-style: none;
 }
@@ -263,6 +264,9 @@ a {
   position: relative;
   margin-right: 40px;
   margin-bottom: 48px;
+}
+.cards__item:nth-child(2n) {
+  margin-right: 0;
 }
 .cards__item:hover .cards__hover,
 .cards__item:focus .cards__hover {
@@ -645,7 +649,6 @@ a {
 }
 .footer-nav__list {
   margin: 0;
-  margin-right: -38px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -653,6 +656,9 @@ a {
 }
 .footer-nav__item {
   margin-right: 38px;
+}
+.footer-nav__item:last-child {
+  margin-right: 0;
 }
 .footer-nav__item--logged-in {
   display: flex;
@@ -680,13 +686,12 @@ a {
 }
 .footer-services__list {
   margin: 0;
-  margin-right: -36px;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
-.footer-services__item {
+.footer-services__item:not(:last-child) {
   margin-right: 36px;
 }
 .footer-services__link {
@@ -934,17 +939,20 @@ a {
   right: 29px;
 }
 .page {
-  overflow: hidden;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
   color: #000;
+  min-width: 1200px;
+  overflow-x: hidden;
 }
 .page__body {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
+  min-width: 1200px;
+  overflow-x: hidden;
 }
 .page__header {
   position: relative;
@@ -1012,7 +1020,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -40px;
   padding: 0;
   list-style: none;
 }
@@ -1022,6 +1029,9 @@ a {
   margin-right: 40px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.partners__item:last-child {
+  margin-right: 0;
 }
 .partners__item--DJI:hover .partners__logo {
   background-image: url(../img/logo-DJI-color.png);
@@ -1290,7 +1300,7 @@ a {
 }
 .site-nav__item--contacts {
   margin-left: auto;
-  margin-right: -4px;
+  margin-right: 0;
 }
 .site-nav__link {
   font-family: "Gilroy", sans-serif;
@@ -1475,11 +1485,10 @@ a {
   flex-wrap: wrap;
   justify-self: center;
   margin: 0;
-  margin-right: -20px;
   padding: 0;
   list-style: none;
 }
-.social__item {
+.social__item:not(:last-child) {
   margin-right: 20px;
 }
 .social__link {
@@ -1522,21 +1531,22 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -33px;
   padding: 0;
   list-style: none;
 }
 .sort__list--direction {
   flex-shrink: 0;
   margin-left: auto;
-  margin-right: -16px;
 }
-.sort__list--direction .sort__item {
+.sort__list--direction .sort__item:not(:last-child) {
   margin-right: 16px;
 }
 .sort__item {
   margin-right: 33px;
   padding: 5px 0;
+}
+.sort__item:last-child {
+  margin-right: 0;
 }
 .sort__link--direction-up {
   display: block;
@@ -1575,13 +1585,15 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -43px;
   padding: 0;
   list-style: none;
 }
 .user-nav__item {
   margin-right: 43px;
   padding-bottom: 12px;
+}
+.user-nav__item:last-child {
+  margin-right: 0;
 }
 .user-nav__item:first-child {
   margin-right: auto;

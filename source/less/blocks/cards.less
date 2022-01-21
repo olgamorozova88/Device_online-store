@@ -7,7 +7,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -40px;
   padding: 0;
   list-style: none;
 }
@@ -17,6 +16,10 @@
   position: relative;
   margin-right: 40px;
   margin-bottom: 48px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 
   &:hover .cards__hover,
   &:focus .cards__hover {

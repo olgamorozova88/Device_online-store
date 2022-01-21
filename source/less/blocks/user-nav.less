@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -43px;
   padding: 0;
   list-style: none;
 }
@@ -14,6 +13,10 @@
 .user-nav__item {
   margin-right: 43px;
   padding-bottom: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:first-child {
     margin-right: auto;

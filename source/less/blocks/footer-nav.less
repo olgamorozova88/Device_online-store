@@ -4,7 +4,6 @@
 
 .footer-nav__list {
   margin: 0;
-  margin-right: -38px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -13,6 +12,10 @@
 
 .footer-nav__item {
   margin-right: 38px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &--logged-in {
     display: flex;
