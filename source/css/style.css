@@ -710,6 +710,7 @@ a {
   opacity: 0.3;
 }
 .page__footer {
+  margin-top: auto;
   background-color: #363636;
 }
 .footer__wrapper {
@@ -939,20 +940,22 @@ a {
   right: 29px;
 }
 .page {
+  min-width: 1200px;
+  height: 100%;
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
   color: #000;
-  min-width: 1200px;
-  overflow-x: hidden;
 }
 .page__body {
+  min-height: 100%;
+  min-width: 1200px;
+  overflow-x: hidden;
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  min-width: 1200px;
-  overflow-x: hidden;
 }
 .page__header {
   position: relative;
@@ -1508,10 +1511,11 @@ a {
 }
 .sort::before {
   content: '';
+  display: block;
   width: 100vw;
   min-height: 100%;
   position: absolute;
-  left: 0;
+  left: 100%;
   top: 0;
   z-index: -1;
   background-color: #E5E5E5;
