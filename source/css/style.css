@@ -761,9 +761,12 @@ a {
   background-color: #FFC600;
 }
 .footer__social {
+  display: none;
   justify-self: center;
 }
 .footer__copyright {
+  grid-column-start: 3;
+  grid-column-end: 4 ;
   margin-left: auto;
 }
 .form {
